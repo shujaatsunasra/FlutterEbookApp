@@ -6,3 +6,5 @@ export 'home/home.dart';
 export 'settings/settings.dart';
 export 'splash/splash.dart';
 export 'tabs/tabs.dart';
+
+//DO NOT ALTER THIS FILE THERE MAY BE CONFLICTS BASED ON ALTERATION.
