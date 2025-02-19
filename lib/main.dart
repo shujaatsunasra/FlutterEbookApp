@@ -6,11 +6,14 @@ import 'package:sembast/sembast.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  //Local storage using shared prefernaces 
   LocalStorage();
   await DatabaseConfig.init(StoreRef<dynamic, dynamic>.main());
   runApp(
     ProviderScope(
-      observers: [RiverpodObserver()],
+      observers: [
+        //Usage of Riverpod StateManagement
+        RiverpodObserver()],
       child: MyApp(),
     ),
   );
